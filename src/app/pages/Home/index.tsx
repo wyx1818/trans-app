@@ -4,7 +4,11 @@ import { useTranslation } from 'react-i18next';
 const Home: React.FC = () => {
   const { t } = useTranslation();
 
-  return <div>{t('welcome')}</div>;
+  return (
+    <div>
+      <p>{t('welcome')}</p>
+    </div>
+  );
 };
 
 export default Home;

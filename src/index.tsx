@@ -1,18 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
 
 import './i18n/i18next';
 import reportWebVitals from './reportWebVitals';
-import store from './redux/store';
 import App from './app/App';
 
 const render = () => {
   ReactDOM.render(
     <React.StrictMode>
-      <Provider store={store}>
-        <App />
-      </Provider>
+      <App />
     </React.StrictMode>,
     document.getElementById('root'),
   );
